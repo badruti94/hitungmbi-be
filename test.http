@@ -6,7 +6,7 @@ Content-Type: application/json
 
 {
   "records": [{
-  "id": "bmi-004",
+  "id": "bmi-003",
   "heightCm": 170,
   "weightKg": 65,
   "bmi": 22.49,
@@ -24,7 +24,7 @@ POST http://localhost:3000/api/v1/bmi
 Content-Type: application/json
 
 {
-  "id": "bmi-00",
+  "id": "bmi-001",
   "heightCm": 170,
   "weightKg": 65,
   "bmi": 22.49,
@@ -54,4 +54,7 @@ Content-Type: application/json
 ### =========================================
 ### GET ALL BMI DATA
 ### =========================================
-GET http://localhost:3000/api/v1/bmi
+GET https://hitungmbi-be.vercel.app/api/v1/bmi
+
+###
+GET http://localhost:3000/api/v1/tips/random
