@@ -1,0 +1,55 @@
+### =========================================
+### CREATE BMI (POST)
+### =========================================
+POST http://localhost:3000/api/v1/bmi
+Content-Type: application/json
+
+{
+  "id": "bmi-001",
+  "heightCm": 170,
+  "weightKg": 65,
+  "bmi": 22.49,
+  "gender": "male",
+  "createdAtMillis": 1737000000000
+}
+
+###
+
+### =========================================
+### CREATE BMI (DUPLICATE ID - should not insert)
+### =========================================
+POST http://localhost:3000/api/v1/bmi
+Content-Type: application/json
+
+{
+  "id": "bmi-001",
+  "heightCm": 170,
+  "weightKg": 65,
+  "bmi": 22.49,
+  "gender": "male",
+  "createdAtMillis": 1737000000000
+}
+
+###
+
+### =========================================
+### CREATE BMI (SECOND DATA)
+### =========================================
+POST http://localhost:3000/api/v1/bmi
+Content-Type: application/json
+
+{
+  "id": "bmi-002",
+  "heightCm": 160,
+  "weightKg": 50,
+  "bmi": 19.53,
+  "gender": "female",
+  "createdAtMillis": 1737003600000
+}
+
+###
+
+### =========================================
+### GET ALL BMI DATA
+### =========================================
+GET http://localhost:3000/api/v1/bmi
