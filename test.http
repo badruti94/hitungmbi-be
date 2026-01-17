@@ -57,4 +57,4 @@ Content-Type: application/json
 GET https://hitungmbi-be.vercel.app/api/v1/bmi
 
 ###
-GET http://localhost:3000/api/v1/tips/random
+GET http://localhost:3000/api/v1/tips

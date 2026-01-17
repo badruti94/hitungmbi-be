@@ -65,11 +65,7 @@ app.get("/api/v1/bmi", (_req, res) => {
 });
 
 app.get("/api/v1/tips", (_req, res) => {
-    res.json({
-        ok: true,
-        data: tips,
-        total: tips.length
-    });
+    res.json(tips);
 });
 
 // =========================
@@ -79,10 +75,7 @@ app.get("/api/v1/tips/random", (_req, res) => {
     const randomIndex = Math.floor(Math.random() * tips.length);
     const tip = tips[randomIndex];
 
-    res.json({
-        ok: true,
-        data: tip
-    });
+    res.json(tip);
 });
 
 const PORT = process.env.PORT || 3000;
