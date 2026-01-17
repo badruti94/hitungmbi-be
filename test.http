@@ -1,16 +1,18 @@
 ### =========================================
 ### CREATE BMI (POST)
 ### =========================================
-POST http://localhost:3000/api/v1/bmi
+POST http://localhost:3000/api/v1/bmi/sync
 Content-Type: application/json
 
 {
-  "id": "bmi-001",
+  "records": [{
+  "id": "bmi-004",
   "heightCm": 170,
   "weightKg": 65,
   "bmi": 22.49,
   "gender": "male",
   "createdAtMillis": 1737000000000
+  }]
 }
 
 ###
@@ -22,7 +24,7 @@ POST http://localhost:3000/api/v1/bmi
 Content-Type: application/json
 
 {
-  "id": "bmi-001",
+  "id": "bmi-00",
   "heightCm": 170,
   "weightKg": 65,
   "bmi": 22.49,
